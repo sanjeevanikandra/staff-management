@@ -27,11 +27,16 @@ const App = () => {
   };
 
   return (
+<<<<<<< HEAD:src/components/SupervisorBoard.js
     <div className="App">
       <h1>Supervisor Dashboard</h1>
       <TaskForm staff={staff} addTask={addTask} />
       <TaskList tasks={tasks} deleteTask={deleteTask} updateTask={updateTask} />
       <StaffList staff={staff} />
+=======
+    <div>
+      <h1>Supervisor Board</h1>
+>>>>>>> 17974671983923403ed60f027d4047312257fa55:src/pages/SupervisorBoard.js
     </div>
   );
 };

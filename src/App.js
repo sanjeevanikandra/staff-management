@@ -2,10 +2,10 @@ import React from 'react';
 import { BrowserRouter as Router, Route,Routes  } from 'react-router-dom';
 import Login from './components/Login';
 import Signup from './components/SignUp';
-import Home from './components/Home';
-import AddminBoard from './components/AddminBoard';
-import StaffBoard from './components/StaffBoard';
-import SupervisorBoard from './components/Supervisor_dashboard/Supervisor';
+import Home from './pages/Home';
+import AddminBoard from './pages/AddminBoard';
+import StaffBoard from './pages/StaffBoard';
+import SupervisorBoard from './pages/SupervisorBoard';
 
 
 function App() {
