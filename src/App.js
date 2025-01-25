@@ -5,7 +5,7 @@ import Signup from './components/SignUp';
 import Home from './pages/Home';
 import AddminBoard from './pages/AddminBoard';
 import StaffBoard from './pages/StaffBoard';
-import SupervisorBoard from './pages/SupervisorBoard';
+import Superviser from './components/Supervisor_dashboard/Supervisor'
 
 
 function App() {
@@ -17,7 +17,7 @@ function App() {
         <Route path="/signup" element={<Signup />} />
         <Route path="/admin" element={<AddminBoard />} />
         <Route path="/staff" element={<StaffBoard />} />
-        <Route path="/supervisor" element={<SupervisorBoard />} />
+        <Route path="/superwiser" element={<Superviser />} />
       </Routes>
     </Router>
   )
