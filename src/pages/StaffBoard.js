@@ -1,11 +1,18 @@
-import React from 'react'
+import React from "react";
 
-function StaffBoard() {
+const StaffList = ({ staff }) => {
   return (
     <div>
-      <h1>Staff Board</h1>
+      <h2>Staff List</h2>
+      <ul>
+        {staff.map((member) => (
+          <li key={member.id}>
+            {member.name} (ID: {member.id})
+          </li>
+        ))}
+      </ul>
     </div>
-  )
-}
+  );
+};
 
-export default StaffBoard
+export default StaffList;

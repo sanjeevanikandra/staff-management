@@ -7,12 +7,7 @@ const TaskForm = ({ staff, addTask }) => {
   const handleSubmit = (e) => {
     e.preventDefault();
     if (task && staffId) {
-      addTask({
-        id: Date.now(),
-        task,
-        staffId,
-        status: "Pending",
-      });
+      addTask({ id: Date.now(), task, staffId, status: "Pending" });
       setTask("");
       setStaffId("");
     }
@@ -27,10 +22,7 @@ const TaskForm = ({ staff, addTask }) => {
         value={task}
         onChange={(e) => setTask(e.target.value)}
       />
-      <select
-        value={staffId}
-        onChange={(e) => setStaffId(e.target.value)}
-      >
+      <select value={staffId} onChange={(e) => setStaffId(e.target.value)}>
         <option value="">Select Staff</option>
         {staff.map((member) => (
           <option key={member.id} value={member.id}>

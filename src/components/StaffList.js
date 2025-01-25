@@ -6,7 +6,9 @@ const StaffList = ({ staff }) => {
       <h2>Staff List</h2>
       <ul>
         {staff.map((member) => (
-          <li key={member.id}>{member.name}</li>
+          <li key={member.id}>
+            {member.name} (ID: {member.id})
+          </li>
         ))}
       </ul>
     </div>
