@@ -1,17 +1,18 @@
 import React, { useState } from "react";
-import TaskForm from "./components/TaskForm";
-import TaskList from "./components/TaskList";
-import StaffList from "./components/StaffList";
-import "./App.css";
+import TaskForm from "../Task/TaskForm";
 
-const App = () => {
-  const [tasks, setTasks] = useState([]);
+import TaskList from "../Task/TaskList";
+import StaffList from "../StaffList";
+  
+
+  const Dashboard = ()=>{
+
+    const [tasks, setTasks] = useState([]);
   const [staff, setStaff] = useState([
     { id: 1, name: "John Doe" },
     { id: 2, name: "Jane Smith" },
     { id: 3, name: "Emily Davis" },
   ]);
-
   const addTask = (task) => {
     setTasks([...tasks, task]);
   };
@@ -34,6 +35,7 @@ const App = () => {
       <StaffList staff={staff} />
     </div>
   );
+
 };
 
-export default App;
+export default Dashboard;

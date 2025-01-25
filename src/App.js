@@ -5,7 +5,7 @@ import Signup from './components/SignUp';
 import Home from './components/Home';
 import AddminBoard from './components/AddminBoard';
 import StaffBoard from './components/StaffBoard';
-import SupervisorBoard from './components/SupervisorBoard';
+import SupervisorBoard from './components/Supervisor_dashboard/Supervisor';
 
 
 function App() {
