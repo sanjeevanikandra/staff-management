@@ -1,6 +1,31 @@
 {
-    "users":[],
-    "staff":[],
-    "supervisors":[],
-    "admin":[]
+  "users": [
+    {
+      "id": "aWOBbh5ZhzXc2XHytAquaWiQ8MC3",
+      "name": "Ina",
+      "gender": "Female",
+      "email": "hello@gmail.com",
+      "password": "123456789",
+      "employeeType": "Admin"
+    },
+    {
+      "id": "kd5kbqITE8a3VapKgNtNFIil5he2",
+      "name": "Riya",
+      "gender": "Female",
+      "email": "bye@gmail.com",
+      "password": "123456789",
+      "employeeType": "Supervisor"
+    },
+    {
+      "id": "Q6s4UyBZd8dooZITXRgblshSGsz2",
+      "name": "Priyanka",
+      "gender": "Female",
+      "email": "tata@gmail.com",
+      "password": "123456789",
+      "employeeType": "Staff"
+    }
+  ],
+  "staff": [],
+  "supervisors": [],
+  "admin": []
 }
