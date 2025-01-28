@@ -20,7 +20,7 @@ function Login() {
 
       const response = await fetch(`http://localhost:3000/users/${userId}`);
       const data = await response.json();
-      const userEmployeeType = data.employeeType;
+      const userEmployeeType = data.role;
 
       if (userEmployeeType === 'Admin') {
         navigate('/admin');

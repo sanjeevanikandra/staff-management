@@ -29,7 +29,7 @@ function SignUp() {
         gender: gender,
         email: email,
         password: password,
-        employeeType: employeeType
+        role: employeeType
       };
 
       await fetch('http://localhost:3000/users', {
