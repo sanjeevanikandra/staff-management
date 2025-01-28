@@ -1,39 +1,6 @@
 {
-  "users": [
-    {
-      "id": "aWOBbh5ZhzXc2XHytAquaWiQ8MC3",
-      "name": "Ina",
-      "gender": "Female",
-      "email": "hello@gmail.com",
-      "password": "123456789",
-      "role": "Admin"
-    },
-    {
-      "id": "kd5kbqITE8a3VapKgNtNFIil5he2",
-      "name": "Riya",
-      "gender": "Female",
-      "email": "bye@gmail.com",
-      "password": "123456789",
-      "role": "Supervisor"
-    },
-    {
-      "id": "Q6s4UyBZd8dooZITXRgblshSGsz2",
-      "name": "Priyanka",
-      "gender": "Female",
-      "email": "tata@gmail.com",
-      "password": "123456789",
-      "role": "Staff"
-    },
-    {
-      "id": "5Sm2OjwGpTXSDJzKvyLt8p0MD2k1",
-      "name": "sanju",
-      "gender": "Female",
-      "email": "sanju@email.com",
-      "password": "654321",
-      "role": "Staff"
-    }
-  ],
-  "staff": [],
-  "supervisors": [],
-  "admin": []
+    "users":[],
+    "staff":[],
+    "supervisors":[],
+    "admin":[]
 }
