@@ -1,38 +1,41 @@
 {
   "users": [
     {
-      "id": "1",
-      "name": "Alice Johnson",
-      "email": "alice.johnson@example.com",
-      "password": "admin123",
-      "role": "admin",
-      "gender": "female"
+      "id": "aWOBbh5ZhzXc2XHytAquaWiQ8MC3",
+      "name": "Ina",
+      "gender": "Female",
+      "email": "hello@gmail.com",
+      "password": "123456789",
+      "role": "Admin"
     },
     {
-      "id": "2",
-      "name": "Brian Smith",
-      "email": "brian.smith@example.com",
-      "password": "supervisor123",
-      "role": "supervisor",
-      "gender": "male"
+      "id": "kd5kbqITE8a3VapKgNtNFIil5he2",
+      "name": "Riya",
+      "gender": "Female",
+      "email": "bye@gmail.com",
+      "password": "123456789",
+      "role": "Supervisor"
     },
     {
-      "id": "3",
-      "name": "Catherine Lee",
-      "email": "catherine.lee@example.com",
-      "password": "staff123",
-      "role": "staff",
-      "gender": "female"
+      "id": "Q6s4UyBZd8dooZITXRgblshSGsz2",
+      "name": "Priyanka",
+      "gender": "Female",
+      "email": "tata@gmail.com",
+      "password": "123456789",
+      "role": "Staff"
     },
     {
-      "id": "4",
-      "name": "Cv",
-      "email": "cv@example.com",
-      "password": "staff123",
-      "role": "staff",
-      "gender": "female"
+      "id": "5Sm2OjwGpTXSDJzKvyLt8p0MD2k1",
+      "name": "sanju",
+      "gender": "Female",
+      "email": "sanju@email.com",
+      "password": "654321",
+      "role": "Staff"
     }
   ],
+  "staff": [],
+  "supervisors": [],
+  "admin": [],
   "tasks": [
     {
       "title": "aaaaaaaaaaAAAAAAAAAAAAAAAAAA",
