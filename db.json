@@ -2,55 +2,49 @@
   "users": [],
   "staff": [
     {
-      "id": "1",
+      "id": 1,
       "name": "John Doe",
       "email": "john.doe@example.com",
       "department": "Sales",
       "tasks": []
     },
     {
-      "id": "2",
+      "id": 2,
       "name": "Jane Smith",
       "email": "jane.smith@example.com",
       "department": "Marketing",
       "tasks": []
     },
     {
-      "id": "3",
+      "id": 3,
       "name": "Emily Davis",
       "email": "emily.davis@example.com",
       "department": "Human Resources",
       "tasks": []
     },
     {
-      "id": "4",
+      "id": 4,
       "name": "Michael Brown",
       "email": "michael.brown@example.com",
       "department": "Engineering",
       "tasks": []
     },
     {
-      "id": "1737799957771",
+      "id": 1737799957771,
       "task": "dfghj",
-      "staffId": "3",
-      "status": "Pending"
-    },
-    {
-      "id": 1738058932431,
-      "task": "sfdghjkllk;",
       "staffId": "3",
       "status": "Pending"
     }
   ],
   "supervisors": [
     {
-      "id": "1",
+      "id": 1,
       "name": "Alice Johnson",
       "email": "alice.johnson@example.com",
       "department": "Sales"
     },
     {
-      "id": "2",
+      "id": 2,
       "name": "Robert Wilson",
       "email": "robert.wilson@example.com",
       "department": "Marketing"
