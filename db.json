@@ -1,76 +1,58 @@
 {
-  "users": [
+<<<<<<<<< Temporary merge branch 1
+  "users": [],
+  "staff": [
     {
-      "id": "1",
+      "id": 1,
+      "name": "John Doe",
+      "email": "john.doe@example.com",
+      "department": "Sales",
+      "tasks": []
+    },
+    {
+      "id": 2,
+      "name": "Jane Smith",
+      "email": "jane.smith@example.com",
+      "department": "Marketing",
+      "tasks": []
+    },
+    {
+      "id": 3,
+      "name": "Emily Davis",
+      "email": "emily.davis@example.com",
+      "department": "Human Resources",
+      "tasks": []
+    },
+    {
+      "id": 4,
+      "name": "Michael Brown",
+      "email": "michael.brown@example.com",
+      "department": "Engineering",
+      "tasks": []
+    },
+    {
+      "id": 1737799957771,
+      "task": "dfghj",
+      "staffId": "3",
+      "status": "Pending"
+    }
+  ],
+  "supervisors": [
+    {
+      "id": 1,
       "name": "Alice Johnson",
       "email": "alice.johnson@example.com",
-      "password": "admin123",
-      "role": "admin",
-      "gender": "female"
+      "department": "Sales"
     },
     {
-      "id": "2",
-      "name": "Brian Smith",
-      "email": "brian.smith@example.com",
-      "password": "supervisor123",
-      "role": "supervisor",
-      "gender": "male"
-    },
-    {
-      "id": "3",
-      "name": "Catherine Lee",
-      "email": "catherine.lee@example.com",
-      "password": "staff123",
-      "role": "staff",
-      "gender": "female"
-    },
-    {
-      "id": "4",
-      "name": "Cv",
-      "email": "cv@example.com",
-      "password": "staff123",
-      "role": "staff",
-      "gender": "female"
+      "id": 2,
+      "name": "Robert Wilson",
+      "email": "robert.wilson@example.com",
+      "department": "Marketing"
     }
   ],
-  "tasks": [
-    {
-      "title": "aaaaaaaaaaAAAAAAAAAAAAAAAAAA",
-      "description": "aaaaaaaaaaaaAAAAAAA",
-      "assignedTo": "4",
-      "deadline": "2025-01-27",
-      "assignedBy": 2,
-      "status": "Pending",
-      "id": "5cd4"
-    }
-  ],
-  "leaves": [
-    {
-      "id": "1",
-      "staffId": "3",
-      "reason": "Sick Leave",
-      "startDate": "2025-01-30",
-      "endDate": "2025-02-02",
-      "status": "Pending"
-    },
-    {
-      "id": "5f85",
-      "reason": "I have my practical exam.",
-      "startDate": "2025-01-29",
-      "endDate": "2025-01-29",
-      "status": "Approved",
-      "staffId": 4
-    },
-    {
-      "id": "e487",
-      "reason": "medical essue",
-      "startDate": "2025-01-28",
-      "endDate": "2025-01-28",
-      "status": "Approved",
-      "staffId": 4
-    }
-  ],
-  "notifications": [
+=========
+  "users": [
     {
       "id": "1",
       "staffId": "3",
@@ -114,28 +96,16 @@
       "date": "2025-01-27T06:28:58.962Z"
     },
     {
-      "id": "4a54",
-      "staffId": "4",
-      "message": "Your blocker on task \"aaaaaaaaa\" has been acknowledged by the supervisor.",
-      "date": "2025-01-28T04:45:34.401Z"
-    },
-    {
-      "id": "ce66",
-      "staffId": 2,
-      "message": "Staff member Cv has completed the task \"staff project\".",
-      "date": "2025-01-28T04:46:21.236Z"
-    },
-    {
-      "id": "82fb",
-      "staffId": 2,
-      "message": "Staff member Cv has applied for leave from 2025-01-28 to 2025-01-28.",
-      "date": "2025-01-28T04:46:58.033Z"
-    },
-    {
-      "id": "3486",
-      "staffId": 4,
-      "message": "Your leave request from 2025-01-28 to 2025-01-28 has been approved.",
-      "date": "2025-01-28T04:47:28.505Z"
+      "id": "5Sm2OjwGpTXSDJzKvyLt8p0MD2k1",
+      "name": "sanju",
+      "gender": "Female",
+      "email": "sanju@email.com",
+      "password": "654321",
+      "role": "Staff"
     }
-  ]
+  ],
+  "staff": [],
+  "supervisors": [],
+>>>>>>>>> Temporary merge branch 2
+  "admin": []
 }
