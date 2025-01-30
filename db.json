@@ -1,99 +1,28 @@
 {
-<<<<<<<<< Temporary merge branch 1
-  "users": [],
-  "staff": [
-    {
-      "id": 1,
-      "name": "John Doe",
-      "email": "john.doe@example.com",
-      "department": "Sales",
-      "tasks": []
-    },
-    {
-      "id": 2,
-      "name": "Jane Smith",
-      "email": "jane.smith@example.com",
-      "department": "Marketing",
-      "tasks": []
-    },
-    {
-      "id": 3,
-      "name": "Emily Davis",
-      "email": "emily.davis@example.com",
-      "department": "Human Resources",
-      "tasks": []
-    },
-    {
-      "id": 4,
-      "name": "Michael Brown",
-      "email": "michael.brown@example.com",
-      "department": "Engineering",
-      "tasks": []
-    },
-    {
-      "id": 1737799957771,
-      "task": "dfghj",
-      "staffId": "3",
-      "status": "Pending"
-    }
-  ],
-  "supervisors": [
-    {
-      "id": 1,
-      "name": "Alice Johnson",
-      "email": "alice.johnson@example.com",
-      "department": "Sales"
-    },
-    {
-      "id": 2,
-      "name": "Robert Wilson",
-      "email": "robert.wilson@example.com",
-      "department": "Marketing"
-    }
-  ],
-=========
   "users": [
     {
-      "id": "1",
-      "staffId": "3",
-      "message": "You have been assigned a new task: Team Meeting for Project Alpha.",
-      "date": "2025-01-28"
+      "id": "aWOBbh5ZhzXc2XHytAquaWiQ8MC3",
+      "name": "Ina",
+      "gender": "Female",
+      "email": "hello@gmail.com",
+      "password": "123456789",
+      "role": "Admin"
     },
     {
-      "id": "2",
-      "staffId": "4",
-      "message": "Your task 'Complete Quarterly Report' is delayed due to missing data.",
-      "date": "2025-01-25"
+      "id": "kd5kbqITE8a3VapKgNtNFIil5he2",
+      "name": "Riya",
+      "gender": "Female",
+      "email": "bye@gmail.com",
+      "password": "123456789",
+      "role": "Supervisor"
     },
     {
-      "id": "4786",
-      "staffId": 2,
-      "message": "Staff member Cv has completed the task \"Complete Quarterly Report\".",
-      "date": "2025-01-27T06:24:15.269Z"
-    },
-    {
-      "id": "ace8",
-      "staffId": "4",
-      "message": "Your blocker on task \"aaaaaaaaa\" has been acknowledged by the supervisor.",
-      "date": "2025-01-27T06:25:27.329Z"
-    },
-    {
-      "id": "b461",
-      "staffId": "4",
-      "message": "Your blocker on task \"aaaaaaaaa\" has been acknowledged by the supervisor.",
-      "date": "2025-01-27T06:25:41.701Z"
-    },
-    {
-      "id": "1cc8",
-      "staffId": 2,
-      "message": "Staff member Cv has applied for leave from 2025-01-29 to 2025-01-29.",
-      "date": "2025-01-27T06:28:42.335Z"
-    },
-    {
-      "id": "3ec6",
-      "staffId": 4,
-      "message": "Your leave request from 2025-01-29 to 2025-01-29 has been approved.",
-      "date": "2025-01-27T06:28:58.962Z"
+      "id": "Q6s4UyBZd8dooZITXRgblshSGsz2",
+      "name": "Priyanka",
+      "gender": "Female",
+      "email": "tata@gmail.com",
+      "password": "123456789",
+      "role": "Staff"
     },
     {
       "id": "5Sm2OjwGpTXSDJzKvyLt8p0MD2k1",
@@ -106,6 +35,5 @@
   ],
   "staff": [],
   "supervisors": [],
->>>>>>>>> Temporary merge branch 2
   "admin": []
 }
