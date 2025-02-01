@@ -6,7 +6,6 @@ import { useNavigate } from 'react-router-dom';
 console.log("Auth instance:", auth);
 
 function SignUp() {
-
   const [name, setName] = useState('');
   const [gender, setGender] = useState('');
   const [email, setEmail] = useState('');
@@ -32,13 +31,14 @@ function SignUp() {
         role: employeeType
       };
 
-      await fetch('http://localhost:3000/users', {
+      await fetch('http://localhost:5000/users', {  // API endpoint changed
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'
         },
         body: JSON.stringify(userData),
       });
+
       alert('User registered successfully');
       navigate('/login');
     } catch (error) {
@@ -94,7 +94,7 @@ function SignUp() {
           onChange={(e) => setEmployeeType(e.target.value)}
           required
         >
-          <option value="">Select emplyee type</option>
+          <option value="">Select employee type</option>
           <option value="Admin">Admin</option>
           <option value="Supervisor">Supervisor</option>
           <option value="Staff">Staff</option>
@@ -106,4 +106,4 @@ function SignUp() {
   )
 }
 
-export default SignUp
+export default SignUp;
