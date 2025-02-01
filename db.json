@@ -1,35 +1,11 @@
 {
   "users": [
     {
-      "id": "aWOBbh5ZhzXc2XHytAquaWiQ8MC3",
-      "name": "Ina",
-      "gender": "Female",
-      "email": "hello@gmail.com",
-      "password": "123456789",
-      "role": "Admin"
-    },
-    {
-      "id": "kd5kbqITE8a3VapKgNtNFIil5he2",
-      "name": "Riya",
-      "gender": "Female",
-      "email": "bye@gmail.com",
-      "password": "123456789",
-      "role": "Supervisor"
-    },
-    {
-      "id": "Q6s4UyBZd8dooZITXRgblshSGsz2",
-      "name": "Priyanka",
-      "gender": "Female",
-      "email": "tata@gmail.com",
-      "password": "123456789",
-      "role": "Staff"
-    },
-    {
-      "id": "5Sm2OjwGpTXSDJzKvyLt8p0MD2k1",
-      "name": "sanju",
-      "gender": "Female",
-      "email": "sanju@email.com",
-      "password": "654321",
+      "id": "zXbeS2sP2iWOCiGaGZ5uALN3svd2",
+      "name": "asd",
+      "gender": "Male",
+      "email": "asd@gmail.com",
+      "password": "123456",
       "role": "Staff"
     },
     {
@@ -41,112 +17,13 @@
       "role": "Staff"
     }
   ],
-  "staff": [],
-  "supervisors": [],
-  "admin": [],
   "tasks": [
-    {
-      "title": "aaaaaaaaaaAAAAAAAAAAAAAAAAAA",
-      "description": "aaaaaaaaaaaaAAAAAAA",
-      "assignedTo": "4",
-      "deadline": "2025-01-27",
-      "assignedBy": 2,
-      "status": "Pending",
-      "id": "5cd4"
-    }
+    {}
   ],
   "leaves": [
-    {
-      "id": "1",
-      "staffId": "3",
-      "reason": "Sick Leave",
-      "startDate": "2025-01-30",
-      "endDate": "2025-02-02",
-      "status": "Pending"
-    },
-    {
-      "id": "5f85",
-      "reason": "I have my practical exam.",
-      "startDate": "2025-01-29",
-      "endDate": "2025-01-29",
-      "status": "Approved",
-      "staffId": 4
-    },
-    {
-      "id": "e487",
-      "reason": "medical essue",
-      "startDate": "2025-01-28",
-      "endDate": "2025-01-28",
-      "status": "Approved",
-      "staffId": 4
-    }
+    {}
   ],
   "notifications": [
-    {
-      "id": "1",
-      "staffId": "3",
-      "message": "You have been assigned a new task: Team Meeting for Project Alpha.",
-      "date": "2025-01-28"
-    },
-    {
-      "id": "2",
-      "staffId": "4",
-      "message": "Your task 'Complete Quarterly Report' is delayed due to missing data.",
-      "date": "2025-01-25"
-    },
-    {
-      "id": "4786",
-      "staffId": 2,
-      "message": "Staff member Cv has completed the task \"Complete Quarterly Report\".",
-      "date": "2025-01-27T06:24:15.269Z"
-    },
-    {
-      "id": "ace8",
-      "staffId": "4",
-      "message": "Your blocker on task \"aaaaaaaaa\" has been acknowledged by the supervisor.",
-      "date": "2025-01-27T06:25:27.329Z"
-    },
-    {
-      "id": "b461",
-      "staffId": "4",
-      "message": "Your blocker on task \"aaaaaaaaa\" has been acknowledged by the supervisor.",
-      "date": "2025-01-27T06:25:41.701Z"
-    },
-    {
-      "id": "1cc8",
-      "staffId": 2,
-      "message": "Staff member Cv has applied for leave from 2025-01-29 to 2025-01-29.",
-      "date": "2025-01-27T06:28:42.335Z"
-    },
-    {
-      "id": "3ec6",
-      "staffId": 4,
-      "message": "Your leave request from 2025-01-29 to 2025-01-29 has been approved.",
-      "date": "2025-01-27T06:28:58.962Z"
-    },
-    {
-      "id": "4a54",
-      "staffId": "4",
-      "message": "Your blocker on task \"aaaaaaaaa\" has been acknowledged by the supervisor.",
-      "date": "2025-01-28T04:45:34.401Z"
-    },
-    {
-      "id": "ce66",
-      "staffId": 2,
-      "message": "Staff member Cv has completed the task \"staff project\".",
-      "date": "2025-01-28T04:46:21.236Z"
-    },
-    {
-      "id": "82fb",
-      "staffId": 2,
-      "message": "Staff member Cv has applied for leave from 2025-01-28 to 2025-01-28.",
-      "date": "2025-01-28T04:46:58.033Z"
-    },
-    {
-      "id": "3486",
-      "staffId": 4,
-      "message": "Your leave request from 2025-01-28 to 2025-01-28 has been approved.",
-      "date": "2025-01-28T04:47:28.505Z"
-    }
+    {}
   ]
 }
