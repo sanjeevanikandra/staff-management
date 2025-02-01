@@ -31,6 +31,14 @@
       "email": "sanju@email.com",
       "password": "654321",
       "role": "Staff"
+    },
+    {
+      "id": "CLhmTB4eksUxzbnFmChTkiNyXn32",
+      "name": "cc",
+      "gender": "Female",
+      "email": "cc@gmail.com",
+      "password": "cccccc",
+      "role": "Staff"
     }
   ],
   "staff": [],

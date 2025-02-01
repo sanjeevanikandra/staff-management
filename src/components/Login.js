@@ -18,7 +18,7 @@ function Login() {
       const userId = user.uid;
       alert('User logged in successfully');
 
-      const response = await fetch(`http://localhost:3000/users/${userId}`);
+      const response = await fetch(`http://localhost:5000/users/${userId}`);
       const data = await response.json();
       const userEmployeeType = data.role;
 
