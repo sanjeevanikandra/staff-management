@@ -119,16 +119,6 @@
       "blocker": "Acknowledged by Supervisor"
     },
     {
-      "id": "3ba7",
-      "title": "make project",
-      "description": "make project",
-      "assignedTo": "XqiW27ZEzLh8cGNoSOxffGUbEQA3",
-      "deadline": "2025-02-05",
-      "assignedBy": "IFr1dhxgdxSn0fuoREvzmApbznU2",
-      "status": "Pending",
-      "assignedAt": "2025-02-05T05:30:58.752Z"
-    },
-    {
       "id": "2a3a",
       "title": "lets do party",
       "description": "this sanday",
@@ -137,6 +127,17 @@
       "assignedBy": "IFr1dhxgdxSn0fuoREvzmApbznU2",
       "status": "Pending",
       "assignedAt": "2025-02-05T05:36:46.407Z"
+    },
+    {
+      "id": "36a0",
+      "title": "complete the presentation",
+      "description": "complete the presentation",
+      "assignedTo": "XqiW27ZEzLh8cGNoSOxffGUbEQA3",
+      "deadline": "2025-02-06",
+      "assignedBy": "IFr1dhxgdxSn0fuoREvzmApbznU2",
+      "status": "Completed",
+      "assignedAt": "2025-02-05T06:26:50.173Z",
+      "blocker": "Acknowledged by Supervisor"
     }
   ],
   "leaves": [
@@ -235,6 +236,19 @@
       "staffId": "dtDAVGHu88TQkymhfeMvsB8gGmr1",
       "message": "Your leave request from 2025-02-03 to 2025-02-03 has been approved.",
       "date": "2025-02-05T05:40:20.802Z"
+    },
+    {
+      "id": "2e12",
+      "supervisorId": "IFr1dhxgdxSn0fuoREvzmApbznU2",
+      "staffId": "XqiW27ZEzLh8cGNoSOxffGUbEQA3",
+      "message": "A blocker has been added to your task: \"complete the presentation\". Blocker: \"I need some more time for that.\"",
+      "date": "2025-02-05T06:27:34.337Z"
+    },
+    {
+      "id": "1658",
+      "staffId": "XqiW27ZEzLh8cGNoSOxffGUbEQA3",
+      "message": "Your blocker on task \"complete the presentation\" has been acknowledged by the supervisor.",
+      "date": "2025-02-05T06:29:45.041Z"
     }
   ]
 }
