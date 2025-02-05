@@ -1,7 +1,10 @@
+/////////chtl+z/////////////////////
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
+import { useParams } from 'react-router-dom';
 
 const SupervisorPage = () => {
+  const { userId } = useParams();
   const [supervisorData, setSupervisorData] = useState(null);
   const [staffData, setStaffData] = useState([]);
   const [tasks, setTasks] = useState([]);
@@ -12,69 +15,84 @@ const SupervisorPage = () => {
     deadline: '',
   });
   const [leaves, setLeaves] = useState([]);
+  const [notifications, setNotifications] = useState([]);  // Added state for notifications
   const [editingTaskId, setEditingTaskId] = useState(null); // State to track which task is being edited
-
-  const supervisorId = 2; // Logged-in supervisor ID
 
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await axios.get('http://localhost:5000/users');
-        const allUsers = response.data;
-
-        // Sirf 'Staff' role wale users nikalna
+        // Fetch supervisor data based on userId
+        const supervisorResponse = await axios.get(`http://localhost:5000/users/${userId}`);
+        setSupervisorData(supervisorResponse.data);
+  
+        // Fetch staff data and tasks based on supervisor's userId
+        const usersResponse = await axios.get('http://localhost:5000/users');
+        const allUsers = usersResponse.data;
         const filteredStaff = allUsers.filter(user => user.role.toLowerCase() === 'staff');
-
-        // Unique staff ko dikhane ke liye ek Set use kar rahe hain
         const uniqueStaff = Array.from(new Map(filteredStaff.map(user => [user.id, user])).values());
-
         setStaffData(uniqueStaff);
+  
+        // Fetch tasks assigned by the supervisor
+        const tasksResponse = await axios.get(`http://localhost:5000/tasks?assignedBy=${userId}`);
+        setTasks(tasksResponse.data);
+  
+        // Fetch leave requests for staff under the supervisor
+        const leavesResponse = await axios.get(`http://localhost:5000/leaves?supervisorId=${userId}`);
+        setLeaves(leavesResponse.data);
+  
+        // Fetch notifications for the supervisor (blockers, leave requests, etc.)
+        const notificationsResponse = await axios.get(`http://localhost:5000/notifications?supervisorId=${userId}`);
+        setNotifications(notificationsResponse.data);
       } catch (error) {
-        console.error('Error fetching users:', error);
+        console.error('Error fetching supervisor data:', error);
       }
     };
+  
     fetchData();
-  }, []); // Closing the useEffect hook correctly
+  }, [userId]); // Dependency on userId so the data refreshes when the supervisor changes
+  
+  
 
   const handleLeaveApproval = async (leaveId, staffId) => {
     try {
-      const updatedLeave = leaves.find((leave) => leave.id === leaveId);
-      updatedLeave.status = 'Approved';
+        const updatedLeave = leaves.find((leave) => leave.id === leaveId);
+        updatedLeave.status = 'Approved';
 
-      const notification = {
-        staffId: staffId,
-        message: `Your leave request from ${updatedLeave.startDate} to ${updatedLeave.endDate} has been approved.`,
-        date: new Date().toISOString(),
-      };
+        // Create notification for staff about leave approval
+        const notification = {
+            staffId: staffId,
+            message: `Your leave request from ${updatedLeave.startDate} to ${updatedLeave.endDate} has been approved.`,
+            date: new Date().toISOString(),
+        };
 
-      await axios.put(`http://localhost:5000/leaves/${leaveId}`, updatedLeave);
-      await axios.post('http://localhost:5000/notifications', notification);
+        await axios.put(`http://localhost:5000/leaves/${leaveId}`, updatedLeave);
+        await axios.post('http://localhost:5000/notifications', notification); // Send notification to staff
 
-      setLeaves(leaves.map((leave) => (leave.id === leaveId ? updatedLeave : leave)));
-      alert('Leave approved and notification sent to staff!');
+        setLeaves(leaves.map((leave) => (leave.id === leaveId ? updatedLeave : leave)));
+        alert('Leave approved and notification sent to staff!');
     } catch (error) {
-      console.error('Error approving leave request:', error);
+        console.error('Error approving leave request:', error);
     }
   };
 
   const handleReactToBlocker = async (taskId) => {
     try {
-      const updatedTask = tasks.find((task) => task.id === taskId);
-      updatedTask.blocker = 'Acknowledged by Supervisor';
+        const updatedTask = tasks.find((task) => task.id === taskId);
+        updatedTask.blocker = 'Acknowledged by Supervisor';
 
-      const notification = {
-        staffId: updatedTask.assignedTo,
-        message: `Your blocker on task "${updatedTask.title}" has been acknowledged by the supervisor.`,
-        date: new Date().toISOString(),
-      };
+        const notification = {
+            staffId: updatedTask.assignedTo,
+            message: `Your blocker on task "${updatedTask.title}" has been acknowledged by the supervisor.`,
+            date: new Date().toISOString(),
+        };
 
-      await axios.put(`http://localhost:5000/tasks/${updatedTask.id}`, updatedTask);
-      await axios.post('http://localhost:5000/notifications', notification);
+        await axios.put(`http://localhost:5000/tasks/${updatedTask.id}`, updatedTask);
+        await axios.post('http://localhost:5000/notifications', notification); // Send notification to staff
 
-      setTasks(tasks.map((task) => (task.id === taskId ? updatedTask : task)));
-      alert('Blocker acknowledged!');
+        setTasks(tasks.map((task) => (task.id === taskId ? updatedTask : task)));
+        alert('Blocker acknowledged!');
     } catch (error) {
-      console.error('Error reacting to blocker:', error);
+        console.error('Error reacting to blocker:', error);
     }
   };
 
@@ -82,10 +100,26 @@ const SupervisorPage = () => {
     e.preventDefault();
     if (newTask.title && newTask.description && newTask.assignedTo) {
       try {
-        const task = { ...newTask, assignedBy: supervisorId, status: 'Pending' };
-
+        const supervisorId = supervisorData?.id; // Use supervisorData.id for supervisor's id
+  
+        // Get the current date and time for task assignment
+        const assignedAt = new Date().toISOString(); // Get the current time in ISO format
+  
+        const task = { 
+          ...newTask, 
+          assignedBy: supervisorId, 
+          status: 'Pending', 
+          assignedAt: assignedAt // Add the date and time when the task is assigned
+        };
+  
+        const notification = {
+          staffId: newTask.assignedTo,
+          message: `You have been assigned a new task: "${newTask.title}"`,
+          date: new Date().toISOString(),
+        };
+  
         if (editingTaskId) {
-          // If we're editing an existing task, update it
+          // If editing an existing task, update it
           await axios.put(`http://localhost:5000/tasks/${editingTaskId}`, task);
           const updatedTasks = tasks.map((taskItem) =>
             taskItem.id === editingTaskId ? { ...taskItem, ...task } : taskItem
@@ -98,7 +132,7 @@ const SupervisorPage = () => {
           setTasks([...tasks, task]);
           alert('Task assigned successfully!');
         }
-
+  
         // Reset the form
         setNewTask({ title: '', description: '', assignedTo: '', deadline: '' });
         setEditingTaskId(null); // Clear the editing state
@@ -107,6 +141,7 @@ const SupervisorPage = () => {
       }
     }
   };
+  
 
   const handleEditClick = (taskId) => {
     const taskToEdit = tasks.find((task) => task.id === taskId);
@@ -156,7 +191,6 @@ const SupervisorPage = () => {
         })}
       </ul>
 
-
       <h2>{editingTaskId ? 'Edit Task' : 'Assign a Task'}</h2>
       <form onSubmit={handleTaskSubmit}>
         <input
@@ -199,8 +233,20 @@ const SupervisorPage = () => {
           </li>
         ))}
       </ul>
+
+      <h2>Notifications</h2>
+<ul>
+  {notifications.map((notification) => (
+    <li key={notification.id}>{notification.message}</li>
+  ))}
+</ul>
+
     </div>
   );
 };
 
 export default SupervisorPage;
+
+
+
+

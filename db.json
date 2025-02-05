@@ -15,15 +15,226 @@
       "email": "cc@gmail.com",
       "password": "cccccc",
       "role": "Staff"
+    },
+    {
+      "id": "dtDAVGHu88TQkymhfeMvsB8gGmr1",
+      "name": "aa",
+      "gender": "Female",
+      "email": "aa@gmail.com",
+      "password": "aaaaaa",
+      "role": "Staff"
+    },
+    {
+      "id": "IFr1dhxgdxSn0fuoREvzmApbznU2",
+      "name": "dd",
+      "gender": "Male",
+      "email": "dd@gmail.com",
+      "password": "dddddd",
+      "role": "Supervisor"
+    },
+    {
+      "id": "SehMklDkHQQQiLFnQqC0GArMPW73",
+      "name": "qwe",
+      "gender": "Male",
+      "email": "qwe@gmail.com",
+      "password": "qqqqqq",
+      "role": "Supervisor"
+    },
+    {
+      "id": "XqiW27ZEzLh8cGNoSOxffGUbEQA3",
+      "name": "zxc",
+      "gender": "Male",
+      "email": "zxc@gmail.com",
+      "password": "zzzzzz",
+      "role": "Staff"
+    },
+    {
+      "id": "7TjdkPnuduXjS3MNZE9eOXEsoP43",
+      "name": "tt",
+      "gender": "Female",
+      "email": "tt@gmail.com",
+      "password": "tttttt",
+      "role": "Staff"
     }
   ],
   "tasks": [
-    {}
+    {
+      "id": "f4ff",
+      "status": "Completed"
+    },
+    {
+      "id": "324d",
+      "title": "aaaaaaaaaaaaaaaaaaaa",
+      "description": "aaaaaaaaaaaaaaaaaaaaaa",
+      "assignedTo": "dtDAVGHu88TQkymhfeMvsB8gGmr1",
+      "deadline": "2025-02-01",
+      "assignedBy": 2,
+      "status": "Completed"
+    },
+    {
+      "id": "67f3",
+      "title": "aaaaaabbbbbbbbbbbb",
+      "description": "aaaaaaaabbbbbbbbbbbbbbb",
+      "assignedTo": "dtDAVGHu88TQkymhfeMvsB8gGmr1",
+      "deadline": "2025-02-01",
+      "assignedBy": 2,
+      "status": "Pending",
+      "blocker": "a"
+    },
+    {
+      "id": "24e5",
+      "title": "dddddddddddddddd",
+      "description": "dddddddddddddd",
+      "assignedTo": "zXbeS2sP2iWOCiGaGZ5uALN3svd2",
+      "deadline": "2025-02-01",
+      "assignedBy": 2,
+      "status": "Pending"
+    },
+    {
+      "id": "5eb9",
+      "title": "qqqqqqqqqqqqqqqq",
+      "description": "qqqqqqqqqqqqqqqq",
+      "assignedTo": "zXbeS2sP2iWOCiGaGZ5uALN3svd2",
+      "deadline": "2025-02-01",
+      "assignedBy": 2,
+      "status": "Pending"
+    },
+    {
+      "id": "b750",
+      "title": "cccccccccccccccccccccc",
+      "description": "ccccccccccccccc",
+      "assignedTo": "CLhmTB4eksUxzbnFmChTkiNyXn32",
+      "deadline": "",
+      "assignedBy": "IFr1dhxgdxSn0fuoREvzmApbznU2",
+      "status": "Pending"
+    },
+    {
+      "id": "4bf9",
+      "title": "complete the sheet ",
+      "description": "for staff",
+      "assignedTo": "dtDAVGHu88TQkymhfeMvsB8gGmr1",
+      "deadline": "2025-02-03",
+      "assignedBy": "IFr1dhxgdxSn0fuoREvzmApbznU2",
+      "status": "Completed",
+      "blocker": "Acknowledged by Supervisor"
+    },
+    {
+      "id": "3ba7",
+      "title": "make project",
+      "description": "make project",
+      "assignedTo": "XqiW27ZEzLh8cGNoSOxffGUbEQA3",
+      "deadline": "2025-02-05",
+      "assignedBy": "IFr1dhxgdxSn0fuoREvzmApbznU2",
+      "status": "Pending",
+      "assignedAt": "2025-02-05T05:30:58.752Z"
+    },
+    {
+      "id": "2a3a",
+      "title": "lets do party",
+      "description": "this sanday",
+      "assignedTo": "CLhmTB4eksUxzbnFmChTkiNyXn32",
+      "deadline": "2025-02-05",
+      "assignedBy": "IFr1dhxgdxSn0fuoREvzmApbznU2",
+      "status": "Pending",
+      "assignedAt": "2025-02-05T05:36:46.407Z"
+    }
   ],
   "leaves": [
-    {}
+    {
+      "id": "de75"
+    },
+    {
+      "id": "d8fb",
+      "reason": "aaaaaaaaaaaaaaa",
+      "startDate": "2025-02-01",
+      "endDate": "2025-02-01",
+      "status": "Pending",
+      "staffId": "dtDAVGHu88TQkymhfeMvsB8gGmr1"
+    },
+    {
+      "id": "6543",
+      "reason": "zzzzzzzzzzzzzz",
+      "startDate": "2025-02-03",
+      "endDate": "2025-02-03",
+      "status": "Pending",
+      "staffId": "XqiW27ZEzLh8cGNoSOxffGUbEQA3"
+    },
+    {
+      "id": "2749",
+      "reason": "I have exam",
+      "startDate": "2025-02-03",
+      "endDate": "2025-02-03",
+      "supervisorId": "SehMklDkHQQQiLFnQqC0GArMPW73",
+      "status": "Pending",
+      "staffId": "dtDAVGHu88TQkymhfeMvsB8gGmr1"
+    },
+    {
+      "id": "dcd9",
+      "reason": "I have health essue",
+      "startDate": "2025-02-03",
+      "endDate": "2025-02-03",
+      "supervisorId": "IFr1dhxgdxSn0fuoREvzmApbznU2",
+      "status": "Approved",
+      "staffId": "dtDAVGHu88TQkymhfeMvsB8gGmr1"
+    },
+    {
+      "id": "9329",
+      "reason": "medical leave",
+      "startDate": "2025-02-05",
+      "endDate": "2025-02-06",
+      "supervisorId": "SehMklDkHQQQiLFnQqC0GArMPW73",
+      "status": "Pending",
+      "staffId": "XqiW27ZEzLh8cGNoSOxffGUbEQA3"
+    }
   ],
   "notifications": [
-    {}
+    {
+      "id": "2ca4"
+    },
+    {
+      "id": "79ac",
+      "supervisorId": "IFr1dhxgdxSn0fuoREvzmApbznU2",
+      "staffId": "dtDAVGHu88TQkymhfeMvsB8gGmr1",
+      "message": "A blocker has been added to your task: \"complete the sheet \". Blocker: \"I am waiting for sheet.\"",
+      "date": "2025-02-03T15:27:24.378Z"
+    },
+    {
+      "id": "6265",
+      "staffId": "dtDAVGHu88TQkymhfeMvsB8gGmr1",
+      "message": "Your blocker on task \"complete the sheet \" has been acknowledged by the supervisor.",
+      "date": "2025-02-03T15:27:56.905Z"
+    },
+    {
+      "id": "da4e",
+      "supervisorId": "IFr1dhxgdxSn0fuoREvzmApbznU2",
+      "staffId": "dtDAVGHu88TQkymhfeMvsB8gGmr1",
+      "message": "A new leave request has been submitted by aa for the dates 2025-02-03 to 2025-02-03. Reason: I have health essue",
+      "date": "2025-02-03T16:04:46.381Z"
+    },
+    {
+      "id": "2909",
+      "staffId": "dtDAVGHu88TQkymhfeMvsB8gGmr1",
+      "message": "Your leave request from 2025-02-03 to 2025-02-03 has been approved.",
+      "date": "2025-02-03T16:05:11.689Z"
+    },
+    {
+      "id": "74ae",
+      "supervisorId": "SehMklDkHQQQiLFnQqC0GArMPW73",
+      "staffId": "XqiW27ZEzLh8cGNoSOxffGUbEQA3",
+      "message": "A new leave request has been submitted by zxc for the dates 2025-02-05 to 2025-02-06. Reason: medical leave",
+      "date": "2025-02-05T05:33:15.957Z"
+    },
+    {
+      "id": "065d",
+      "staffId": "dtDAVGHu88TQkymhfeMvsB8gGmr1",
+      "message": "Your leave request from 2025-02-03 to 2025-02-03 has been approved.",
+      "date": "2025-02-05T05:40:06.077Z"
+    },
+    {
+      "id": "488d",
+      "staffId": "dtDAVGHu88TQkymhfeMvsB8gGmr1",
+      "message": "Your leave request from 2025-02-03 to 2025-02-03 has been approved.",
+      "date": "2025-02-05T05:40:20.802Z"
+    }
   ]
 }
